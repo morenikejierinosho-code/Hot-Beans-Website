@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hot Beans Web</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+<header>
+  <div class="logo">Hot Beans Website</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="trainees.html">Trainee Profile</a>
+    <a href="apply.html">Apply now</a>
+    <a href="resources.html">Resources</a>
+  </nav>
+</header>
+
+<main>
+  <section class="page-title-hero">
+    <h1>Trainee Profiles</h1>
+    <p>See examples of current and past trainees and the skills they bring</p>
+  </section>
+
+  <section class="filter-bar">
+    <form>
+      <label for="search">Search:</label>
+      <input type="text" id="search" placeholder="search by name or skill">
+
+      <label for="skills">Skills:</label>
+      <select id="skills">
+        <option>All</option>
+        <option>HTML and CSS</option>
+        <option>JavaScript</option>
+        <option>Back end</option>
+        <option>Full stack</option>
+      </select>
+
+      <label for="category">Category:</label>
+      <select id="category">
+        <option>All</option>
+        <option>Current trainees</option>
+        <option>Graduates</option>
+      </select>
+
+      <button type="submit">Filter</button>
+    </form>
+  </section>
+
+  <section class="card-grid">
+
+    <article class="profile-card">
+      <div class="profile-photo">
+        <img src="Jordan.webp" alt="Jordan Smith">
+      </div>
+      <h3>Jordan Smith</h3>
+      <p><strong>Skills:</strong> HTML, CSS, JavaScript</p>
+      <p>Interested in front-end development and responsive design.</p>
+      <a href="#" class="btn small">View Profile</a>
+    </article>
+
+    <article class="profile-card">
+      <div class="profile-photo">
+        <img src="Emily brown.jpg" alt="Emily Brown">
+      </div>
+      <h3>Emily Brown</h3>
+      <p><strong>Skills:</strong> JavaScript, React, APIs</p>
+      <p>Enjoys building interactive web applications.</p>
+      <a href="#" class="btn small">View Profile</a>
+    </article>
+
+    <article class="profile-card">
+      <div class="profile-photo">
+        <img src="Chloe green.jpg" alt="Chloe Green">
+      </div>
+      <h3>Chloe Green</h3>
+      <p><strong>Skills:</strong> Full Stack</p>
+      <p>Comfortable working on both front-end and back-end.</p>
+      <a href="#" class="btn small">View Profile</a>
+    </article>
+
+  </section>
+</main>
+
+<footer>
+  <p>© Hot Beans Web | Contact | Socials</p>
+</footer>
+
+</body>
+</html>
