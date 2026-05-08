@@ -1,0 +1,284 @@
+
+
+:root {
+    --header: #305496;
+    --hero: #D9E1F2;
+    --main: #F2F2F2;
+    --secondary: #EDEDED;
+    --sidebar: #E7E6F7;
+    --highlight: #FCE4D6;
+    --footer: #7F7F7F;
+
+    --text-dark: #222;
+    --text-light: #fff;
+    --btn-blue: #305496;
+    --btn-blue-hover: #1f3a6d;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--main);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--header);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+header {
+    background: var(--header);
+    color: var(--text-light);
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+nav a {
+    color: var(--text-light);
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a.active {
+    text-decoration: underline;
+}
+
+
+.hero {
+    background: var(--hero);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+
+.btn {
+    display: inline-block;
+    background: var(--btn-blue);
+    color: var(--text-light);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: var(--btn-blue-hover);
+}
+
+.btn.secondary {
+    background: #6c8cd5;
+}
+
+.btn.small {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+}
+
+
+.layout-two {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.layout-three {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+
+
+.sidebar {
+    background: var(--sidebar);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+
+.features {
+    background: var(--secondary);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.highlights {
+    background: var(--highlight);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.testimonial {
+    margin-bottom: 15px;
+}
+
+.author {
+    font-style: italic;
+    color: #444;
+}
+
+
+
+.card-grid,
+.profile-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card,
+.profile-card {
+    background: var(--secondary);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.placeholder-photo {
+    width: 100%;
+    height: 150px;
+    background: #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+
+.filter-bar {
+    background: var(--secondary);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.filter-bar form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.filter-bar input,
+.filter-bar select {
+    padding: 8px;
+}
+
+
+
+.application-form {
+    background: var(--secondary);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    background: #fff;
+}
+
+
+.cta {
+    text-align: center;
+    padding: 40px;
+    border-radius: 5px;
+}
+
+
+footer {
+    background: var(--footer);
+    color: var(--text-light);
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+
+@media (max-width: 900px) {
+    .layout-two {
+        flex-direction: column;
+    }
+
+    .layout-three {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+}
+.hero {
+  background-image: url("team\ dev.jpg");
+  background-size: cover;        
+  background-position: center;   
+  background-repeat: no-repeat;  
+  
+  height: 400px; 
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile-photo {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.profile-photo img {
+  width: 75%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
